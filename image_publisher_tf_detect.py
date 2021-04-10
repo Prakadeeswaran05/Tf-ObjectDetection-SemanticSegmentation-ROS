@@ -7,9 +7,9 @@ import cv2
 from notcv_bridge import *
 import numpy as np
 import sys
-config_file= '/home/ros/new_ws/src/turtlebot_exp/scripts/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
-frozen_model= '/home/ros/new_ws/src/turtlebot_exp/scripts/frozen_inference_graph.pb'
-file_name="/home/ros/new_ws/src/turtlebot_exp/scripts/Labels.txt"
+config_file= '/home/ros/tf_ws/src/obj_det/scripts/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
+frozen_model= '/home/ros/tf_ws/src/obj_det/scripts/frozen_inference_graph.pb'
+file_name="/home/ros/tf_ws/src/obj_det/scripts/Labels.txt"
 def image_pub():
     rospy.init_node('image_pub', anonymous=True)
     pub = rospy.Publisher('camera/image_raw', Image, queue_size=2)
@@ -24,7 +24,7 @@ def image_pub():
     model.setInputScale(1.0/127.5)
     model.setInputMean((127.5,127.5,127.5))
     model.setInputSwapRB(True)
-    cap = cv2.VideoCapture('/home/ros/new_ws/src/turtlebot_exp/scripts/people.mp4')
+    cap = cv2.VideoCapture('/home/ros/tf_ws/src/obj_det/scripts/people.mp4')
     #bridge = CvBridge()
  
     if not cap.isOpened():
