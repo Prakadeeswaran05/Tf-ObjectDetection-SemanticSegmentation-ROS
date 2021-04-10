@@ -33,3 +33,29 @@ In another new terminal<br/>
 
 
 
+
+
+
+## Output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p align="left">
+  <img src="obj-det.gif" />
+</p>
+
+
+
