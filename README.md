@@ -54,7 +54,7 @@ In another new terminal<br/>
 
 
 <p align="left">
-  <img src="obj-det.gif" />
+  <img src="obj_detect.gif" />
 </p>
 
 
