@@ -16,6 +16,7 @@ Create workspace<br/>
 ```cd tf_ws/```<br/>
 ```mkdir src```<br/>
 ```catkin_make```<br/>
+``` source devel/setup.bash```<br/>
 ```cd src/```<br/>
 
 Create package<br/>
@@ -25,7 +26,8 @@ Create package<br/>
 ## Object Detection
 
 
-Go inside src folder and create a scripts folder and inside scripts folder paste all the files in my repo<br/>
+Go inside obj_det and create a scripts folder and inside scripts folder paste all the files in my repo<br/>
+Make sure to source everytime you open a new terminal <br/>
 Now open new terminal and type<br/>
 ```roscore```<br/>
 
