@@ -8,6 +8,9 @@ Activate the environment <br/>
 ``` source detection/bin/activate ``` <br/>
 Install opencv <br/>
 ```  pip install opencv-contrib-python ```<br/>
+``` pip install tensorflow ``` <br/>
+
+
 Create workspace<br/>
 ```mkdir tf_ws```<br/>
 ```cd tf_ws/```<br/>
@@ -19,12 +22,13 @@ Create package<br/>
 ```catkin_create_pkg obj_det rospy roscpp std_msgs geometry_msgs sensor_msgs cv_bridge image_transport```<br/>
 
 
+## Object Detection
 
 
 Go inside src folder and create a scripts folder and inside scripts folder paste all the files in my repo<br/>
 Now open new terminal and type<br/>
-
 ```roscore```<br/>
+
 In the previous terminal<br/>
 ```python image_publisher_tf_detect.py``` <br/>
 
@@ -36,15 +40,30 @@ In another new terminal<br/>
 
 
 
-## Output
+## Semantic Segmentation
+
+In one terminal <br/>
+```roscore ``` <br/>
+
+In another, <br/>
+``` python basic_pub.py``` <br/>
+
+Finally in a new terminal, <br/>
+``` python deeplab_segment.py``` <br/>
 
 
 
 
 
 
+## Output Object Detection & Semantic Segmentation
 
 
+
+
+<p align="left">
+  <img src="obj_detect.gif" />
+</p>
 
 
 
@@ -54,8 +73,9 @@ In another new terminal<br/>
 
 
 <p align="left">
-  <img src="obj_detect.gif" />
+  <img src="seg_ros.gif" />
 </p>
+
 
 
 
