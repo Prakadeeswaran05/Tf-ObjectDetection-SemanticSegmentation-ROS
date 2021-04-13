@@ -29,9 +29,6 @@ file_path = os.path.join(model_dir, _TARBALL_NAME)
 
 
 model = DeepLabModel(file_path)
-
-
-cap = cv2.VideoCapture('/home/ros/tf_ws/src/obj_det/scripts/people.mp4')
  
  
 def callback(data):
