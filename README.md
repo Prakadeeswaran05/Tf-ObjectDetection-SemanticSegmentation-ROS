@@ -1,4 +1,4 @@
-# Simple-Tf-ObjectDetection-SemanticSegmentation-ROS
+# Tf-ObjectDetection-SemanticSegmentation-ROS
 
 ## Dependencies
 
